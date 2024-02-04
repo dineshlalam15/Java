@@ -1,0 +1,21 @@
+Explanation:
+In Java, primitive data types such as int are passed by value,
+which means when you pass them to a method,
+a copy of their value is passed rather than a reference to the original variable.
+In your swap method, you're swapping the values of a and b locally within the method,
+but these changes don't affect the original variables a and b outside the method.
+
+Pass by Value:
+ - When you pass a parameter by value, you are passing a copy of the actual value to the method.
+ - In Java, primitive data types (such as int, char, float, double, etc.) are passed by value.
+ - This means that changes made to the parameter inside the method do not affect the original variable outside the method.
+
+Pass by Reference:
+ - In Java, objects are passed by reference to the method.
+ - When an object is passed to a method, the reference to that object (memory address) is copied and passed, not the actual object itself.
+ - This means that changes made to the object's state inside the method will affect the original object outside the method.
+ - But reassigning the reference inside the method will not affect the original reference.
+
+Final variables should always be initialised while declaring itself since they cannot be modified.
+This immutability of not able to change the value is only true for primitive data types.
+final: Objects can be modified. When a non primitive is final, you can change the value but cannot reassign.
